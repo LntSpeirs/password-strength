@@ -1,0 +1,66 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  font-weight: 700;
+}
+
+.form {
+  width: 400px;
+}
+
+.input {
+  margin-top: 10px;
+  background-color: rgba(203, 189, 219, 0.87);
+  border: 0;
+  padding: 10px;
+  transition: all 0.3s;
+  color: white;
+}
+
+.input:focus {
+  outline: none;
+  background-color: rgba(203, 189, 219, 0.57);
+}
+
+.App .field {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-container {
+  width: 100%;
+}
+
+.bar-container .progress {
+  height: 0px;
+  transition: all 0.3s;
+  width: 0%;
+  background-color: #d13232;
+}
+
+.progress.bad {
+  height: 10px;
+  width: 33%;
+  background-color: #d13232;
+}
+
+.progress.ok {
+  height: 10px;
+  width: 63%;
+  background-color: #f19829;
+}
+
+.progress.good {
+  height: 10px;
+  width: 100%;
+  background-color: #26c318;
+}
+
+.user svg path:nth-child(2) {
+  opacity: 0.3 !important;
+}
